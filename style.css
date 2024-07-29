@@ -4,6 +4,7 @@
 
 .body{
     background-color: rgb(113, 179, 233);
+    font-family: 'Poppins', sans-serif;
 }
 .carousel {
     position: relative;
