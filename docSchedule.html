@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Schedule Appointments</a>
+          </li>
+          
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Patient Report</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Remote Consultation</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">E-Precription</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <div class="block max-w-sm  bg-white  border-gray-200 rounded-lg shadow hover:bg-gray-100 " style="margin-left: 10% ;margin-right: 10%; margin-top: 2%; margin-bottom:2% ; ">
+        <h1 style="font-weight: bolder;" class="text-2xl p-4">Appointments</h1>
+
+    </div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="margin-left: 5%; margin-right:5%; " >
+        <table class="w-full text-sm text-left rtl:text-right text-black">
+            <thead class="text-xs text-black uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3">NO.</th>
+                    <th scope="col" class="px-6 py-3">Service</th>
+                    <th scope="col" class="px-6 py-3">Patient Name</th>
+                    <th scope="col" class="px-6 py-3">Patient E-mail</th>
+                    <th scope="col" class="px-6 py-3">Date</th>
+                    <th scope="col" class="px-6 py-3">Status</th>
+                    <th scope="col" class="px-6 py-3">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">1</th>
+                    <td class="px-6 py-4">General Checkup</td>
+                    <td class="px-6 py-4">Arjun Sharma</td>
+                    <td class="px-6 py-4">arjun.sharma@example.com</td>
+                    <td class="px-6 py-4">2024-07-28</td>
+                    <td class="px-6 py-4">Pending</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">2</th>
+                    <td class="px-6 py-4">Dental Cleaning</td>
+                    <td class="px-6 py-4">Priya Singh</td>
+                    <td class="px-6 py-4">priya.singh@example.com</td>
+                    <td class="px-6 py-4">2024-07-29</td>
+                    <td class="px-6 py-4">Approved</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">3</th>
+                    <td class="px-6 py-4">Eye Examination</td>
+                    <td class="px-6 py-4">Rajesh Kumar</td>
+                    <td class="px-6 py-4">rajesh.kumar@example.com</td>
+                    <td class="px-6 py-4">2024-07-30</td>
+                    <td class="px-6 py-4">Declined</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">4</th>
+                    <td class="px-6 py-4">Blood Test</td>
+                    <td class="px-6 py-4">Sunita Desai</td>
+                    <td class="px-6 py-4">sunita.desai@example.com</td>
+                    <td class="px-6 py-4">2024-07-31</td>
+                    <td class="px-6 py-4">Pending</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">5</th>
+                    <td class="px-6 py-4">Vaccination</td>
+                    <td class="px-6 py-4">Amit Patel</td>
+                    <td class="px-6 py-4">amit.patel@example.com</td>
+                    <td class="px-6 py-4">2024-08-01</td>
+                    <td class="px-6 py-4">Approved</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">6</th>
+                    <td class="px-6 py-4">Orthopedic Consultation</td>
+                    <td class="px-6 py-4">Kavita Nair</td>
+                    <td class="px-6 py-4">kavita.nair@example.com</td>
+                    <td class="px-6 py-4">2024-08-02</td>
+                    <td class="px-6 py-4">Pending</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">7</th>
+                    <td class="px-6 py-4">Cardiology Checkup</td>
+                    <td class="px-6 py-4">Ravi Verma</td>
+                    <td class="px-6 py-4">ravi.verma@example.com</td>
+                    <td class="px-6 py-4">2024-08-03</td>
+                    <td class="px-6 py-4">Approved</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline">Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b">
+                    <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">8</th>
+                    <td class="px-6 py-4">ENT Consultation</td>
+                    <td class="px-6 py-4">Geeta Rao</td>
+                    <td class="px-6 py-4">geeta.rao@example.com</td>
+                    <td class="px-6 py-4">2024-08-04</td>
+                    <td class="px-6 py-4">Declined</td>
+                    <td class="px-6 py-4">
+                        <button class="font-medium text-green-600 dark:text-green-500 hover:underline"  >Approve</button>
+                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline">Decline</button>
+                    </td>
+                </tr>
+            </table>
+
+            
+
+
+  <div class="flex  justify-center"style="
+     margin-top: 2%; margin-bottom:2% ; "> 
+    <!-- Previous Button -->
+    <a href="#" class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-black bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 " style="margin-right: 2%;" >
+      <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+      </svg>
+      Previous
+    </a>
+    <a href="#" class="flex items-center justify-center px-4 h-10 text-base font-medium text-black bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 ">
+      Next
+      <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+  </div>
+  
+                
+        
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">RogGuru</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Book Appointment</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Healthy lifestyle</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Claim Insurace</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About US</a>
+              </li>
+              
+              
+              <li class="relative">
+                  <button id="loginDropdownButton" data-dropdown-toggle="loginDropdown" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                      Logout
+                      
+                  </button>
+                  <!-- Dropdown menu -->
+                  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="image-container">
+        <img src=" docinhome.jpg " style="height: 650px;" alt="Doctor">
+        <div class="flex space-x-4 m-5 overlay" >
+
+
+            <div class="flex flex-wrap space-x-4">
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="name" class="block text-black font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none w-full py-2 px-3 rounded-lg text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black; " placeholder="Your Name">
+                </div>
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="specialization" class="block text-black font-bold mb-2">Specialization</label>
+                    <input type="text" id="specialization" name="specialization" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;" placeholder="Doctor Specialization">
+                </div>
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="doctorName" class="block text-black font-bold mb-2">Doctor Name</label>
+                    <input type="text" id="doctorName" name="doctorName" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;"  placeholder="Doctor Name">
+                </div>
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="phone" class="block text-black font-bold mb-2">Contact Number</label>
+                    <input type="number" id="phone" name="phone" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;" placeholder="Contact Number">
+                </div>
+            </div>
+
+            <div class="flex flex-wrap space-x-4">
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="location" class="block text-black font-bold mb-2">Location</label>
+                    <input type="text" id="location" name="location" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;" placeholder="Your Location">
+                </div>
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="date" class="block text-black font-bold mb-2">Preferred Date</label>
+                    <input type="date" id="date" name="date" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;">
+                </div>
+                <div class="w-full md:w-1/2 mb-4">
+                    <label for="time" class="block text-black font-bold mb-2">Preferred Time</label>
+                    <input type="time" id="time" name="time" class="shadow appearance-none rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="border: 1px solid black;">
+                </div>
+                <div class="overlay-for-btn " style="margin-top: 2%;">
+
+                    <div class="w-1/2 " >
+                        <br>
+                        <button type="submit" class="shadow appearance-none w-full py-2 px-3 rounded-lg  bg-blue-500 text-white font-bold  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 " style="background-color: blue;margin-left: 50%;">
+                            Search
+                        </button>
+                    </div>
+            
+            
+                  </div>
+            </div>
+            
+          
+            </form>
+
+            
+        </div>
+
+        
+    </div>
+
+
+
+    <div class="justify-center w-full">
+
+        <div class="for-p justify-center mt-25 mb-25">
+            <p class="text-xl"> Our Story Of Home Service</p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-6 m-6">
+            <!-- Story 1 -->
+            <div class="card w-full max-w-xs bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/100" alt="Story 1" class="w-24 h-24 mb-4 rounded-full">
+                <h3 class="text-xl font-semibold mb-2">Maria’s Journey to Recovery</h3>
+                <p class="text-gray-700">"After her hip surgery, Maria was anxious about leaving the hospital. Our home healthcare team provided post-surgical care and physical therapy in her home. With personalized attention and support, Maria’s recovery was smooth, and she was soon back to her daily routines, all without the stress of frequent hospital visits."</div>
+            <!-- Story 2 -->
+            <div class="card w-full max-w-xs bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/100" alt="Story 2" class="w-24 h-24 mb-4 rounded-full">
+                <h3 class="text-xl font-semibold mb-2">John’s Chronic Disease Management</h3>
+                <p class="text-gray-700">"John, living with diabetes, struggled to manage his condition. Our home healthcare professionals visited him regularly, offering medication management, lifestyle advice, and monitoring. With our support, John gained better control over his diabetes, improving his quality of life and reducing hospital visits."</div>
+            <!-- Story 3 -->
+            <div class="card w-full max-w-xs bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/100" alt="Story 3" class="w-24 h-24 mb-4 rounded-full">
+                <h3 class="text-xl font-semibold mb-2">Emily’s Comfort in Palliative Care</h3>
+                <p class="text-gray-700">"Emily, a terminally ill patient, wanted to spend her final days at home. Our compassionate palliative care team provided pain management, emotional support, and assistance with daily activities. Emily’s family appreciated the comfort and dignity she received in her familiar surroundings."</div>
+             
+        </div>    
+
+
+        <div class="flex justify-center">
+            <div class="card w-full max-w-4xl mt-4 bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+                
+                <!-- Text Section -->
+                <div class="md:w-1/2 md:pl-6 text-center md:text-left">
+                    <h2 class="text-2xl font-semibold mb-4">Why Home Healthcare Services?</h2>
+                    <p class="text-gray-700">
+                        Our home healthcare services provide professional medical care right in the comfort of your home. We offer a range of services tailored to meet your individual needs, including:
+
+Personalized Medical Care: Skilled healthcare professionals provide tailored care plans to address your specific health conditions.
+Convenient Appointments: Enjoy the ease of receiving medical attention without leaving your home.
+Comprehensive Services: From routine check-ups to chronic disease management and post-surgical care, we cover a wide range of medical needs.
+Expert Team: Our team consists of experienced doctors, nurses, and specialists dedicated to delivering high-quality care.
+Experience compassionate and effective healthcare at home. Contact us today to schedule your appointment.
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/2 pl-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Healthcare" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
